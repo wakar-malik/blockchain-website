@@ -1,0 +1,124 @@
+@font-face {
+  font-family: extra-bold;
+  src: url("../../assets/fonts/OpenSans-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: semi-bold;
+  src: url("../../assets/fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: med-bold;
+  src: url("../../assets/fonts/OpenSans-Medium.ttf");
+}
+
+:root {
+  --lightBlue: #a0a4b9;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.navbar--logo__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar--logo__container > .navbar-img {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar--logo__container > .logo-text {
+  margin-left: 20px;
+  font-family: extra-bold;
+  font-size: 18px;
+  color: var(--lightBlue);
+}
+
+.nav-items__container {
+  width: 70%;
+}
+
+.nav-items__container .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-items__container > .nav-links > .nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-items__container > .nav-links > .nav-list > .nav-item > a {
+  text-decoration: none;
+  padding: 6px 20px;
+  font-family: extra-bold;
+  font-size: 12px;
+  color: var(--lightBlue);
+}
+
+.nav-items__container > .nav-links > .nav-btn__container > .navbar-btn {
+  padding: 6px 20px;
+  font-weight: 700;
+  font-size: 12px;
+  font-family: extra-bold;
+}
+
+.nav-items__container
+  > .nav-links
+  > .nav-btn__container
+  > .navbar-btn:nth-child(1) {
+  margin-right: 30px;
+}
+
+.menu-img {
+  width: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
+  .navbar-container {
+    width: 90%;
+  }
+
+  .menu-img {
+    display: block;
+  }
+
+  .nav-items__container {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .nav-items__container > .nav-links > .nav-list,
+  .nav-items__container .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .nav-items__container > .nav-links > .nav-list > .nav-item {
+    margin-bottom: 20px;
+  }
+
+  .nav-items__active {
+    display: none;
+  }
+}

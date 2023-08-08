@@ -1,0 +1,19 @@
+@font-face {
+  font-family: extra-bold;
+  src: url("../../assets/fonts/OpenSans-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: semi-bold;
+  src: url("../../assets/fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: med-bold;
+  src: url("../../assets/fonts/OpenSans-Medium.ttf");
+}
+
+.title {
+  font-family: extra-bold;
+  font-size: 50px;
+}
